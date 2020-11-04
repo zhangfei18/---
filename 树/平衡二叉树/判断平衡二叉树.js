@@ -8,7 +8,6 @@
  * 题目描述：给定一个二叉树，判断它是否是高度平衡的二叉树。
  *  Leecode110题：https://leetcode-cn.com/problems/balanced-binary-tree/
  * 
- * 
  * 1.先复习平衡二叉树的定义：任意结点的左右子树高度差绝对值都不大于1的二叉搜索树。
  * 2.提取关键字：
  *      ①任意结点
