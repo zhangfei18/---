@@ -2,7 +2,22 @@
  * BFS: 即层序遍历，
  * 看到层序遍历就要想到BFS+队列
  */
-// 实战：返回二叉树的层序遍历的节点值
+// 代码实现：
+function BFS(root) {
+    if (!root) {
+        return [];
+    }
+    let queue = [];
+    queue.push(root);
+    while (queue.length) {
+        let cur = queue.shift();
+        console.log('层序遍历：', cur);
+        if (cur.left) { queue.push(cur.left) }
+        if (cur.right) { queue.push(cur.right) }
+    }
+}
+
+// 实战1：返回二叉树的层序遍历的节点值
 // Leecode：
 function levelOrder(root) {
     const res = [];

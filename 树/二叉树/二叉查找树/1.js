@@ -92,7 +92,7 @@ function isValidBST(root) {
     }
     return dfs(root, -Infinity, Infinity);
 }
-
+// 根据有序数组构建二叉搜索树
 const sortedArrayToBST = function (nums) {
     // 处理边界条件
     if (!nums.length) {
